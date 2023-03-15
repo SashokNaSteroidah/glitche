@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url(https://allfont.ru/allfont.css?fonts=plexifont);
+@font-face {
+    font-family: AzbukaFixed;
+    src: url(../font/18064.ttf);
+    font-family: MullerRegular;
+    src: url(../font/MullerRegular.woff);
+    /* для лого и лоудскрина */
+    font-family: SerifGothic;
+    src: url(../font/18100.ttf);
+    /* для сайта   */
+    font-family: sali;
+    src: url(../font/112.ttf);
+    font-family: segoe ui;
+    src: url(../font/9404.ttf);
+    font-family: camcorder_ms_reg;
+    src: url(../font/camcorder_ms_reg.woff);
+}
+
+html {
+    font-family: 'Anonymous Pro', monotype;
+    height: 100%;
+}
+
+::selection {
+    color: white;
+    background: rgb(0, 0, 0);
+}
+
+body {
+    font-size: 11px;
+    line-height: 1.4;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+#p_prldr {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    color: white;
+    background: rgb(250, 250, 250);
+}
+
+.contpre small {
+    font-size: 25px;
+}
+
+.contpre {
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    margin-left: -125px;
+    margin-top: -75px;
+    font-family: 'Muli', sans-serif;
+    color: white;
+    font-size: 40px;
+    letter-spacing: -2px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.contpre img {
+    width: 100px;
+    height: 77px;
+}
+
+#p_prldr .svg_anm {
+    position: absolute;
+    animation: animePRELOUD 1s infinite;
+    width: 100px;
+    height: 77px;
+    border-bottom: 3px solid white;
+    background-size: 41px;
+    margin: -16px 0 0 -16px;
+}
+
+main {
+    background: url(../img/back.jpg) fixed;
+    background-size: cover;
+}
+
+.menuContant {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    width: 160px;
+    height: 520px;
+    margin-top: -260px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menuContant p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin: 0;
+    padding: 0;
+    line-height: 15.4px;
+}
+
+.leftMenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: #fff;
+}
+
+.menuContant a {
+    display: inline-block;
+}
+
+.logo {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -317px;
+    width: 147px;
+    height: 52px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.menuContant ul {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    font-family: camcorder_ms_reg;
+}
+
+.menuContant li {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.menuContant a:hover {
+    color: #0f0;
+}
+
+.menuContantDownloud {
+    padding-left: 1px;
+    margin-top: 20px;
+}
+
+.menuContantDownloud a {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 0;
+    width: 161px;
+    height: 47px;
+}
+
+.menuContantDownloud a:hover {
+    background-position: 0 -94px;
+}
+
+.socialMedia {
+    margin: 20px 0;
+}
+
+.socialMedia article {
+    margin: 17px 0;
+}
+
+.socialMediaFacebook a {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -171px;
+    width: 14px;
+    height: 26px;
+}
+
+.socialMediaFacebook a:hover {
+    background-position: 0 -202px;
+}
+
+.socialMediaTwittr a {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -1309px;
+    width: 28px;
+    height: 24px;
+}
+
+.socialMediaTwittr a:hover {
+    background-position: 0 -1338px;
+}
+
+.socialMediaInst a {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -257px;
+    width: 26px;
+    height: 25px;
+}
+
+.socialMediaInst a:hover {
+    background-position: 0 -287px;
+}
+
+.leftTopImg {
+    background: url(../img/leftverh.jpg) fixed 100% 100% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.leftBottomImg {
+    background: url(../img/leftbottom.jpg) fixed 100% 100% no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 50vh;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.RightImg {
+    background: url(../img/right.gif) fixed 100% 100% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.leftTopImg1 {
+    background: url(../img/leftverh1.jpg) fixed 100% 100% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.leftBottomImg1 {
+    background: url(../img/leftbottom1.jpg) fixed 100% 100% no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 50vh;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.RightImg1 {
+    background: url(../img/right1.gif) fixed 100% 100% no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+    box-sizing: border-box;
+    border-bottom: black 10px solid;
+}
+
+.rightPart {
+    position: relative;
+
+    height: 100vh;
+}
+
+.rightContant {
+    height: 100vh;
+    display: flex;
+    line-height: 0%;
+    margin: 0 0 0 200px;
+    overflow: hidden;
+}
+
+.celeb {
+    font-size: 96px;
+    color: #0f0;
+    font-family: 'Plexifont BV', arial;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    padding: 150px 0 290px 0;
+    text-transform: uppercase;
+    transition: .2s;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.celeb:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: .2s;
+}
+
+.celeb1 {
+    font-size: 96px;
+    color: #0f0;
+    font-family: 'Plexifont BV', arial;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    padding: 150px 0 165px 0;
+    text-transform: uppercase;
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.celeb1:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: .2s;
+}
+
+.celeb2 {
+    font-size: 96px;
+    color: #0f0;
+    font-family: 'Plexifont BV', arial;
+    line-height: 1;
+    width: 100%;
+    text-align: center;
+    padding: 400px 0 415px 0;
+    text-transform: uppercase;
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.celeb2:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: .2s;
+}
+
+.windowAbso {
+    font-family: camcorder_ms_reg;
+    position: absolute;
+    background: #000;
+    top: 50%;
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    z-index: 0;
+    left: 45%;
+}
+
+.windowAbso p {
+    display: flex;
+    position: relative;
+    top: 40%;
+    line-height: 1.3;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.windowAbso i {
+    background: url(../img/31d6a385.sprite.png);
+    background-position: 0 -146px;
+    width: 182px;
+    margin: 0 auto;
+    height: 20px;
+    display: inline-block;
+}
+
+.windowAbso span {
+    font-size: 17px;
+    margin-top: 20px;
+    color: #0f0;
+}
+
+.windowAbso1 {
+    font-family: camcorder_ms_reg;
+    pointer-events: none;
+    position: absolute;
+    background: #000;
+    top: 150%;
+    left: 64%;
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    z-index: 1;
+}
+
+.windowAbso1 p {
+    display: flex;
+    line-height: 1.3;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.windowAbso1 h1 {
+    margin: 15vh 1em 0 1em;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.windowAbso1 span {
+    font-size: 17px;
+    line-height: 60px;
+    margin: 0px 0 0 13vw;
+    color: #0f0;
+}
+
+.windowAbso3 {
+    font-family: camcorder_ms_reg;
+    position: absolute;
+    background: #000;
+    top: 430%;
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    z-index: 0;
+    left: 45%;
+}
+
+.windowAbso3 p {
+    display: flex;
+    position: relative;
+    top: 40%;
+    line-height: 1.3;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.windowAbso3 i {
+    background: url(../img/31d6a385.sprite.png);
+    background-position: 0 -146px;
+    width: 182px;
+    margin: 0 auto;
+    height: 20px;
+    display: inline-block;
+}
+
+.windowAbso3 span {
+    font-size: 17px;
+    margin-top: 20px;
+    color: #0f0;
+}
+
+.windowAbso2 {
+    font-family: camcorder_ms_reg;
+    pointer-events: none;
+    position: absolute;
+    background: #000;
+    top: 300%;
+    left: 64%;
+    width: 400px;
+    height: 400px;
+    margin: -200px 0 0 -200px;
+    z-index: 1;
+}
+
+.windowAbso2 p {
+    display: flex;
+    line-height: 1.3;
+    font-size: 20px;
+    text-align: center;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.windowAbso2 h1 {
+    margin: 15vh 1em 0 1em;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.windowAbso2 span {
+    font-size: 17px;
+    line-height: 60px;
+    margin: 0px 0 0 13vw;
+    color: #0f0;
+}
+
+.videoEnd {
+    height: 100%;
+    width: auto;
+}
+
+.vidContain {
+    height: 1007px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0 0 0 200px;
+
+}
+
+.logos {
+    height: 1320.08px;
+    position: relative;
+    text-align: center;
+    margin: 200px 0 0 200px;
+}
+
+.logos1 {
+    background: url(../img/back.jpg) no-repeat;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+}
+
+.logos1 article {
+    height: 259px;
+    background: url(../img/logos1.png) 50% 0 no-repeat;
+
+}
+
+.logosGlitch {
+    width: 100%;
+    height: 70vh;
+    background: url(../img/glitch.png);
+    background-repeat: repeat-y;
+    background-position: 50% 0;
+}
+
+.logos2 {
+    background: url(../img/back.jpg) 0 25.75%;
+    background-size: cover;
+    position: sticky;
+    top: 25.75%;
+}
+
+.logos2 article {
+    height: 200px;
+    background: url(../img/logos1.png) 50% -261px no-repeat;
+}
+
+.team {
+    height: 700px;
+    font-size: 14px;
+    padding-bottom: 30px;
+    margin: 600px 0 0 200px;
+}
+
+.teamWrap {
+    display: flex;
+    margin: 0 auto;
+    width: 33vw;
+    justify-content: space-between;
+}
+
+.downloudBut {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -857px;
+    width: 67px;
+    height: 447px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.downloudBut:hover {
+    background-position: 0 -409px;
+    background-image: url(../img/31d6a385.sprite.png);
+    width: 67px;
+    height: 447px;
+    transform: translateX(10px);
+}
+
+.teamCol {
+    display: flex;
+    flex-direction: column;
+}
+
+.teamCol div {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+span {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.teamCol a {
+    font-family: camcorder_ms_reg;
+    display: block;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.teamCol a:hover {
+    color: #0f0;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.con1 {
+    text-align: right;
+}
+
+.con1 p {
+    padding-right: 10px;
+    margin-bottom: .5em;
+}
+
+.con2 {
+    text-align: left;
+}
+
+.con2 a {
+    margin-bottom: .5em;
+    padding-right: 0;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.award1, .award2, .award3, .award4, .award5 {
+    width: 120px;
+    margin: 0 0 48px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+}
+
+.award1 i {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -233px;
+    width: 74px;
+    display: inline-block;
+    height: 19px;
+}
+
+.award2 i {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -1367px;
+    width: 69px;
+    height: 31px;
+    display: inline-block;
+}
+
+.award3 i {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -1403px;
+    display: inline-block;
+    width: 79px;
+    height: 19px;
+}
+
+.award4 i {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -374px;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+}
+
+.award5 i {
+    background-image: url(../img/31d6a385.sprite.png);
+    background-position: 0 -52px;
+    display: inline-block;
+    width: 37px;
+    height: 37px;
+}
+
+.copy {
+    text-align: center;
+    width: calc(100% - 200px);
+    margin-left: 200px;
+    padding-bottom: 10px;
+}
+
+.copy a:hover {
+    color: #0f0;
+}
